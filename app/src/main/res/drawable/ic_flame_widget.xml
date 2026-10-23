@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Same flame as ic_flame, cropped tight so it fills a small widget slot. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="40dp"
+    android:height="58dp"
+    android:viewportWidth="40"
+    android:viewportHeight="58">
+    <group android:translateX="-34" android:translateY="-24">
+        <path
+            android:fillColor="#4DA3FF"
+            android:pathData="M54,28 C54,28 70,44 70,58 C70,68 63,78 54,78 C45,78 38,68 38,58 C38,52 41,47 45,43 C45,50 48,53 51,53 C51,43 54,28 54,28 Z" />
+        <path
+            android:fillColor="#B7DCFF"
+            android:pathData="M54,52 C54,52 62,60 62,67 C62,72 58,76 54,76 C50,76 46,72 46,67 C46,62 50,58 54,52 Z" />
+    </group>
+</vector>

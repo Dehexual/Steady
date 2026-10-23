@@ -75,8 +75,10 @@ class StreakWidget : AppWidgetProvider() {
             val done = StreakStore.isDoneToday(context)
 
             views.setTextViewText(R.id.widget_count, count.toString())
-            views.setTextViewText(R.id.widget_button, if (done) "Done ✓" else "Mark done")
+            views.setTextViewText(R.id.widget_button, if (done) "Done ✓" else "Check in")
             views.setBoolean(R.id.widget_button, "setEnabled", !done)
+            // Flame is bright once today is checked in, dimmed while it still needs doing.
+            views.setInt(R.id.widget_flame, "setImageAlpha", if (done) 255 else 110)
 
             val doneIntent = Intent(context, StreakWidget::class.java).setAction(ACTION_DONE)
             views.setOnClickPendingIntent(
