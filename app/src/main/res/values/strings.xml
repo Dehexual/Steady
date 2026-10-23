@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Steady</string>
+    <string name="widget_description">A private daily streak tracker with a one-tap check-in</string>
+</resources>
